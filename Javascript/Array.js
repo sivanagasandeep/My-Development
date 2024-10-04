@@ -11,3 +11,6 @@ console.log(vlaues.shift());
 console.log(vlaues.unshift("sandeep"));
 console.log(vlaues);
 console.log(vlaues.slice(1,4));
+
+console.log(vlaues.splice(2,2,1608));
+console.log(vlaues);
