@@ -50,4 +50,4 @@ myarr.forEach((val,i,arr)=>{
 arr.filter((val)=>{
   console.log(val**2);
 })
-console.log(s);
+
