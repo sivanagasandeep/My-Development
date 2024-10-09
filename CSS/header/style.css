@@ -65,14 +65,14 @@ h1{
     border-radius:50% ;
     margin-bottom: 20px;
 } */
- div{
+ /* div{
     background-color: aqua;
     border: 2px solid black;
     width: 100px;
-    height:100px;
-    display: inline-block;
+    height:100px; */
+    /* display: inline-block;
     margin:30px;
- }
+ } 
  .box1{
     position: static;
     right:100px;
@@ -90,5 +90,82 @@ h1{
  .box4{
     position: sticky;
     top:0px;
-    z-index: 1;
- }
+    
+ } */ 
+  /* flexbox */
+.container{
+background-color: black;
+width: 100%;
+height:40px;
+color:white;
+display: flex;
+/* flex-direction:column; */
+align-items: center;
+justify-content: space-between;
+}
+#outer{
+    background-color: rgb(224, 29, 29);
+    color:white;
+    width:400px;
+    height:400px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#inner{
+    background-color: rgb(130, 29, 224);
+    color:white;
+    width:100px;
+    height:100px;
+   text-align: center;
+}
+/* @media  (min-width:800px){
+    #outer{
+        background-color: blueviolet;
+    }
+    #inner{
+        background-color: red;
+    }
+} */
+/* @media (min-width:100px) and (max-width:600){
+    #outer{
+        background-color: green;
+    }
+    #inner{
+        background-color: rgb(255, 153, 0);
+    } */
+/* } */
+
+div{
+    background-color: aqua;
+    width:150px;
+    height:100px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 2s;
+   
+}
+div:hover{
+    background-color: red;
+    color:white;
+    font-size: 20px;
+    /* transform: rotate(90deg); */
+    /* transform: scale(0, 2); */
+    transform: translateX(50px);
+}
+@media (max-width :300px){
+  div{
+    background-color: green;
+  }  
+
+}
+@media (min-width :300px) and (max-width:400px){
+    div{
+      background-color: pink;
+    }  
+    
+  }
+
